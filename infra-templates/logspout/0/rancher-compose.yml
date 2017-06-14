@@ -1,0 +1,11 @@
+.catalog:
+  name: "Logspout (Syslog)"
+  version: "v0.0.1"
+  description: "Send all container logs to a syslog endpoint"
+  minimum_rancher_version: v1.4.0
+  questions:
+  - variable: "SYSLOG_SERVER"
+    description: "IP or hostname of the NFS Server (0.0.0.0:1234)"
+    label: "NFS Server"
+    required: true
+    type: "string"

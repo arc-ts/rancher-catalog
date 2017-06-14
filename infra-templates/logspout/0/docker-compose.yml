@@ -1,0 +1,15 @@
+version: '2'
+services:
+  logspout:
+    image: gliderlabs/logspout
+    stdin_open: true
+    external_links:
+    - graylog/graylog:graylog
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    tty: true
+    command:
+    - syslog+tcp://${SYSLOG_SERVER}
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'

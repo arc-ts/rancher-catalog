@@ -1,0 +1,7 @@
+name: Logspout (Syslog)
+description: |
+  Send all container logs to syslog endpoint
+version: v0.0.1
+category: Logging
+labels:
+  io.rancher.orchestration.supported: 'cattle'
