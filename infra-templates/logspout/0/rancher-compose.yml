@@ -5,7 +5,7 @@
   minimum_rancher_version: v1.4.0
   questions:
   - variable: "SYSLOG_SERVER"
-    description: "IP or hostname of the NFS Server (0.0.0.0:1234)"
-    label: "NFS Server"
+    description: "IP or hostname of the Syslog Server (0.0.0.0:1234)"
+    label: "Syslog Server"
     required: true
     type: "string"
