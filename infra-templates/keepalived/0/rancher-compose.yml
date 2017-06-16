@@ -9,6 +9,11 @@
       label: "Virtual IP"
       type: "string"
       required: true
+    - variable: cidr
+      description: "Network CIDR Block"
+      label: "CIDR"
+      type: "string"
+      required: true
     - variable: master_ip
       description: "IP of master edge node"
       label: "Master IP"
