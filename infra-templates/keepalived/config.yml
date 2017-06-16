@@ -1,0 +1,7 @@
+name: keepalived
+description: |
+  KeepaliveD Secret Sauce
+version: v0.1.0-rancher1
+category: Framework
+labels:
+  io.rancher.orchestration.supported: 'cattle'

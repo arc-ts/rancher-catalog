@@ -1,0 +1,21 @@
+.catalog:
+  name: "keepalived"
+  version: "0.1"
+  description: "Autostart Keepalived (ONLY IF YOU KNOW WHAT YOU'RE DOING)"
+  minimum_rancher_version: v0.46.0
+  questions:
+    - variable: virtual_ip
+      description: "VRRP Pair IP"
+      label: "Virtual IP"
+      type: "string"
+      required: true
+    - variable: master_ip
+      description: "IP of master edge node"
+      label: "Master IP"
+      type: "string"
+      required: true
+    - variable: backup_ip
+        description: "IP of backup edge node"
+        label: "Backup IP"
+        type: "string"
+        required: true
