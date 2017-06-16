@@ -15,7 +15,7 @@
       type: "string"
       required: true
     - variable: backup_ip
-        description: "IP of backup edge node"
-        label: "Backup IP"
-        type: "string"
-        required: true
+      description: "IP of backup edge node"
+      label: "Backup IP"
+      type: "string"
+      required: true
