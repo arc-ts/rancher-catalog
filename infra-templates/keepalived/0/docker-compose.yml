@@ -1,6 +1,6 @@
 version: '2'
 services:
-  keepalived_master:
+  keepalived-master:
     restart: always
     image: arcts/keepalived
     network_mode: host
@@ -18,7 +18,7 @@ services:
     labels:
       io.rancher.scheduler.affinity:host_label: edge=backup
 
-  keepalived_backup:
+  keepalived-backup:
     restart: always
     image: arcts/keepalived
     network_mode: host
